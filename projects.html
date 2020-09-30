@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+ <html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My projects</title>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="stylesheet" media="all" href="css/animate.css"> 
+        <link href="css/style.min.css" rel="stylesheet">
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+    </head>
+    <body class="page-body">
+
+      <svg style="display: none">
+
+        <symbol id="github" viewBox="0 0 64 64"> 
+          <path data-name="layer2" d="M32 0a32.021 32.021 0 0 0-10.1 62.4c1.6.3 2.2-.7 2.2-1.5v-6c-8.9 1.9-10.8-3.8-10.8-3.8-1.5-3.7-3.6-4.7-3.6-4.7-2.9-2 .2-1.9.2-1.9 3.2.2 4.9 3.3 4.9 3.3 2.9 4.9 7.5 3.5 9.3 2.7a6.93 6.93 0 0 1 2-4.3c-7.1-.8-14.6-3.6-14.6-15.8a12.27 12.27 0 0 1 3.3-8.6 11.965 11.965 0 0 1 .3-8.5s2.7-.9 8.8 3.3a30.873 30.873 0 0 1 8-1.1 30.292 30.292 0 0 1 8 1.1c6.1-4.1 8.8-3.3 8.8-3.3a11.965 11.965 0 0 1 .3 8.5 12.1 12.1 0 0 1 3.3 8.6c0 12.3-7.5 15-14.6 15.8a7.746 7.746 0 0 1 2.2 5.9v8.8c0 .9.6 1.8 2.2 1.5A32.021 32.021 0 0 0 32 0z"></path>
+          <path data-name="layer1" d="M12.1 45.9c-.1.2-.3.2-.5.1s-.4-.3-.3-.5.3-.2.6-.1c.2.2.3.4.2.5zm1.3 1.5a.589.589 0 0 1-.8-.8.631.631 0 0 1 .7.1.494.494 0 0 1 .1.7zm1.3 1.8a.585.585 0 0 1-.7-.3.6.6 0 0 1 0-.8.585.585 0 0 1 .7.3c.2.3.2.7 0 .8zm1.7 1.8c-.2.2-.5.1-.8-.1-.3-.3-.4-.6-.2-.8a.619.619 0 0 1 .8.1.554.554 0 0 1 .2.8zm2.4 1c-.1.3-.4.4-.8.3s-.6-.4-.5-.7.4-.4.8-.3c.3.2.6.5.5.7zm2.6.2c0 .3-.3.5-.7.5s-.7-.2-.7-.5.3-.5.7-.5c.4.1.7.3.7.5zm2.4-.4q0 .45-.6.6a.691.691 0 0 1-.8-.3q0-.45.6-.6c.5-.1.8.1.8.3z"></path>
+        </symbol>  
+
+        <symbol id="linkedin" viewBox="0 0 64 64">
+          <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M3.078 22.331h12.188v36.844H3.078z" stroke-linejoin="round"></path>
+          <path data-name="layer2" d="M46.719 21.112c-5.344 0-8.531 1.969-11.906 6.281v-5.062H22.625v36.844h12.281V39.206c0-4.219 2.156-8.344 7.031-8.344s7.781 4.125 7.781 8.25v20.063H62V38.269c0-14.532-9.844-17.157-15.281-17.157z"
+          fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+          <path data-name="layer1" d="M9.219 4.425C5.188 4.425 2 7.331 2 10.894s3.188 6.469 7.219 6.469 7.219-2.906 7.219-6.469-3.188-6.469-7.219-6.469z"
+          fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+        </symbol>  
+        
+        <symbol id="facebook" viewBox="0 0 64 64">         
+          <path data-name="layer1" d="M39.312 13.437H47V2h-9.094C26.938 2.469 24.688 8.656 24.5 15.125v5.719H17V32h7.5v30h11.25V32h9.281l1.781-11.156H35.75v-3.469a3.714 3.714 0 0 1 3.562-3.938z"  stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+        </symbol>  
+
+        <symbol id="instagram" viewBox="0 0 64 64">        
+          <path data-name="layer1" d="M9.687 2h44.625A7.49 7.49 0 0 1 62 9.687v44.625A7.49 7.49 0 0 1 54.312 62H9.687A7.49 7.49 0 0 1 2 54.312V9.687A7.49 7.49 0 0 1 9.687 2z" fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+          <path data-name="layer1" d="M45.687 8.656a2.721 2.721 0 0 0-2.719 2.719v6.469a2.721 2.721 0 0 0 2.719 2.719h6.75a2.721 2.721 0 0 0 2.719-2.719v-6.469a2.721 2.721 0 0 0-2.719-2.719zm9.563 18.75H50a18.523 18.523 0 0 1 .75 5.156c0 9.937-8.344 18.094-18.656 18.094a18.1 18.1 0 0 1-17.906-23.25H8.656v25.313A2.321 2.321 0 0 0 11 55.062h41.812a2.321 2.321 0 0 0 2.344-2.344l.094-25.312z" fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+          <path data-name="layer1" d="M32.094 20.187A11.927 11.927 0 0 0 20 31.906a11.85 11.85 0 0 0 12.094 11.625 11.927 11.927 0 0 0 12.094-11.719 11.85 11.85 0 0 0-12.094-11.625z" fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></path>
+        </symbol>  
+      </svg>  
+
+      <header class="header">
+        <nav class="main-nav main-nav-closed">
+          <div class="main-nav__toggle" id="menuToggle">
+            <input class="main-nav__input" type="checkbox"/>
+            <span class="main-nav__toggle main-nav__toggle--item" id="span1"></span>
+            <span class="main-nav__toggle main-nav__toggle--item" id="span2"></span>
+            <span class="main-nav__toggle main-nav__toggle--item" id="span3"></span>
+          </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item middle">
+              <a class="main-nav__link" href="index.html" tabindex="0"> 
+                Olga Ismailova
+              </a>
+            </li>
+            <li class="main-nav__item middle">
+             <a class="main-nav__link main-nav__link--active" href="projects.html" tabindex="0">
+              My projects
+             </a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Portfolio</h1>
+        <section class="sedona">
+        <div class="sedona__text"> 
+          <div class="sedona__wrap">  
+            <h2 class="sedona__heading">My projects</h2>
+              <a class="sedona__link fadeInRight wow" href="https://github.com/Ismailova4/1394731-sedona-28" tabindex="0">
+                Sedona
+              </a>  
+          </div>                
+              <div class="single-item fadeInRight wow">   
+                <div class="sedona__image">
+                 <picture>
+                   <source media="(min-width: 1200px)" srcset="img/sedona-index@1xdesktop.jpg">
+                   <img class="sedona__pic sedona__pic--one" src="img/sedona-index@1xmobile.jpg" width="330" height="202" alt="Sedona">
+                 </picture> 
+                </div> 
+                <div class="sedona__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/sedona-modal@1xdesktop.jpg">
+                    <img class="sedona__pic sedona__pic--modal" src="img/sedona-modal@1xmobile.jpg" width="330" height="202" alt="Sedona">
+                  </picture> 
+                </div> 
+              </div>         
+        </div>  
+          <div class="sedona__wrapper fadeInRight wow">
+            <div class="multiple-items">
+            <div class="sedona__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sedona-features@1xdesktop.jpg">
+                <img class="sedona__pic sedona__pic--two" src="img/sedona-features@1xmobile.jpg" width="330" height="133" alt="Sedona">
+              </picture>
+            </div>  
+            <div class="sedona__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sedona-adv@1xdesktop.jpg">
+                <img class="sedona__pic sedona__pic--two" src="img/sedona-adv@1x mobile.jpg" width="330" height="133" alt="Sedona">
+              </picture>
+            </div> 
+            </div>
+            <p class="sedona__content fadeInRight wow">
+              Service for a searching and booking apartments/hotels in a town of Sedona, United States.
+              Layout: flexbox, grid.
+              Cross-platform:  Chrome, Firefox, Safari.
+            </p> 
+            <a class="sedona__image fadeInRight wow">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sedona-hotels@1xdesktop.jpg">
+                <img class="sedona__pic sedona__pic--three" src="img/sedona-hotels@1xmobile.jpg" width="330" height="241" alt="Sedona">
+              </picture>
+            </a>   
+          </div>  
+        </section>  
+        <section class="pink">
+          <h2 class="visually-hidden">Pink</h2>
+          <div class="pink__wrap fadeInRight wow">
+          <a class="pink__link fadeInRight wow" href="https://github.com/Ismailova4/1394731-pink-20">
+            Pink
+          </a>
+          <p class="pink__content fadeInRight wow">
+            An app for sharing photos from exotic trips. Methodology: BEM. Automation: Gulp. Adaptive layout: mobile, tablet and desktop versions. Preprocessor - Sass. Adaptive graphic, retinization, using of svg-sprites.
+          </p>
+          <a class="pink__image fadeInRight wow">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/pink-index@1xdesktop.jpg">
+              <img class="pink__pic pink__pic--one" src="img/pink-index@1xmobile.jpg" width="330" height="234" alt="Pink desktop version">
+            </picture>
+          </a>
+          <a class="pink__image fadeInRight wow">
+            <img class="pink__pic pink__pic--two" src="img/pink-tablet-index@1xdesktop.jpg" width="300" height="331" alt="Pink tablet version">
+          </a> 
+          <a class="pink__image fadeInRight wow">
+            <img class="pink__pic pink__pic--three" src="img/pink-mobile-index@1xdesktop.jpg" width="220" height="318" alt="Pink mobile version">
+          </a> 
+          </div>
+          <div class="gallery fadeInRight wow">
+            <div class="gallery__pic gallery__pic--one"></div>
+            <div class="gallery__pic gallery__pic--two"></div>
+            <div class="gallery__pic gallery__pic--three"></div>
+            <div class="gallery__pic gallery__pic--four"></div>           
+          </div>  
+        </section>          
+      </main>
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://github.com/Ismailova4" tabindex="0">
+              <p class="social__content">Github</p>
+              <svg class="social__svg social__svg--github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="22" height="22" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="" tabindex="0">
+              <p class="social__content">LinkedIn</p>
+              <svg class="social__svg social__svg--linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="22" height="22" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/olya.ismailova.1">
+              <p class="social__content">Facebook</p>
+              <svg class="social__svg social__svg--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="22" height="22" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/olga_ismaillova/" tabindex="0">
+              <p class="social__content">Instagram</p>
+              <svg class="social__svg social__svg--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="22" height="22" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">
+          ©2020 by Olga Ismailova
+        </p>
+        <div class="contacts">
+          <a class="contacts__item" href="mailto:ohviva444@gmail.com">ohviva444@gmail.com</a>
+        </div>
+      </footer>
+      </footer>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script> 
+      <script src="js/wow.min.js"></script>
+      <script src="js/slider.js"></script>
+      <script src="js/main-nav.js"></script>
+    </body>
+ </html>
