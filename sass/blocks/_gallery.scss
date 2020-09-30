@@ -1,0 +1,38 @@
+.gallery {
+  display: none;  
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    overflow: hidden;
+  }  
+}
+
+.gallery__pic {
+  height: 241px;
+  width: 200px;
+  flex-basis: 25%;
+  transition: flex 300ms ease;
+  margin: 1px;   
+}
+
+.gallery__pic:hover {
+  cursor: pointer;
+  flex: 0.1 0.1 250px;
+  background-size: 100% 100%;  
+}
+
+.gallery__pic--one {
+  background: url('../../img/pink-tablet@1xdesktop.jpg') 0 0 no-repeat;
+}
+
+.gallery__pic--two {
+  background: url('../../img/pink-tablet-form@1xdesktop.jpg') 0 0 no-repeat;
+}
+
+.gallery__pic--three {
+  background: url('../../img/pink-gallery@1xdesktop.jpg') 0 0 no-repeat;
+}
+
+.gallery__pic--four {
+  background: url('../../img/pink-editor@1xdesktop.jpg') 0 0 no-repeat;
+}  

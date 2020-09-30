@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+  }
+}
+
+.contacts__item {
+  font-family: "Frank Ruhl Libre", "Helvetica", serif;
+  font-size: 16px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  color: $black;
+  text-decoration: none;
+}
+
+.contacts__item:hover {
+  color: $pink;
+  outline: none;
+}
+
+.contacts__item:active {
+  color: transparentize($color: $pink, $amount: 0.7);
+  outline: none;
+}
+

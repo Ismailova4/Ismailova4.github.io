@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+
+  @media (min-width: $desktop-width) {
+    position: fixed;
+    justify-content: flex-start;
+    margin-top: 5vh;
+    margin-left: 2vw;
+  }
+}

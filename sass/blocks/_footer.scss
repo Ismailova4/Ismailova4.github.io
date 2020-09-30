@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 250px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100px;
+    min-width: 65%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

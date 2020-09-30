@@ -1,0 +1,16 @@
+.box {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;  
+    justify-content: flex-start;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+}
+.box__item {
+  width: 60px;
+  height: 60px;
+  border: 5px solid $pink;
+  border-radius: 10px;
+}
